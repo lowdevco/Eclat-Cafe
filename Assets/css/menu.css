@@ -3,65 +3,64 @@ body {
   background-color: #E0DED7;
 }
 
+/* navigation Bar */
+
 header {
-  background-color:  #E8F5E9 ; 
-  width: auto;
+  background-color: #E8F5E9;
+  width: 100%;
   height: 80px;
-  width: 1905px;
-  margin-bottom: 0;
   position: fixed;
   top: 0;
-  z-index:1000;
+  z-index: 1000;
 }
 
 .main-div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.nav-link ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  font-family: urbanist, sans-serif;
+  font-weight: 600;
+}
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .button-1 {
-  width: 100px;
-  height: 35px;
-  border-radius: 20px;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+/* ------------ */
+
+footer{
+  font-family: urbanist, sans-serif;
 }
 
-ul,a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  font-family: urbanist;
-  font-weight: 600;
-}
-
-ul{
-  display: flex;
-  gap: 20px;
-}
-
-li:hover{
-  text-decoration: underline;
-}
-
-.brand-div{
-  padding-top: 10px;
-}
-
-.footer{
-  width: 1905px;
-  height: 350px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../image/home/footer.png);
-}
-
-.footer-div{
-  display: flex;
+.footer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/home/footer.png);
+  background-size: cover;
+  background-position: center;
   color: white;
-  gap: 100px;
-  font-family: urbanist;
-  padding-top: 80px;
-  margin-left: 500px;
 }
-
+.footer-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+}
 .send-input{
   width: 250px;
   height: 26px;
@@ -77,13 +76,13 @@ li:hover{
 .copy{
   text-align: center;
   font-family: urbanist;
-  width: 1905px;
+  width: 100%;
   height: 40px;
   background-color: #E0DED7;
 }
 
 .menu-head{
-    width: 1905px;
+    width: 100%;
     height: 300px;
     margin-top: 80px;
     background-image: url(../image/menu/background.png);
@@ -92,14 +91,14 @@ li:hover{
 }
 
 .section {
-  width: 1905px;
+  width: 100%;
   background-color: #E0DED7; 
   height: auto;
 }
 
 .line {
   background-color: #E0DED7; 
-  width: 1905px;
+  width: 100%;
   height: 100px;
   border-bottom: solid black 1px; 
   border-top: solid black 1px;
@@ -116,23 +115,25 @@ li:hover{
 
 .tab-one, .tab-two, .tab-three {
   background-color: #E0DED7;
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: auto;
   border-radius: 2px;
   border: 1px solid black;
 }
 
 .tab-div {
   display: flex;
-  justify-content: space-around;
-  padding-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 50px;
 }
 
 .tab-img {
-  width: 400px;
+  width: 100%;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  height: 300px;
+  height: 200px;
 }
 
 .tab-slate {
@@ -154,7 +155,9 @@ li:hover{
   border-radius: 10px;
   color: white; 
   font-weight: 750;
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .tab-text {
@@ -173,6 +176,11 @@ li:hover{
   transition: 0.5s;
 }
 
+  .tab-img:hover{
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
 .menu-text{
   text-align: center;
   color: wheat;
@@ -180,7 +188,27 @@ li:hover{
   padding-top: 100px;
 }
 
-.tab-img:hover{
-  transition: 0.5s;
-  border-radius: 20px;
+
+
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #E8F5E9;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .nav-link ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-link.active {
+    display: block;
+  }
 }

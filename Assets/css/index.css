@@ -1,302 +1,103 @@
-
 body {
-  margin: 0px;
+  margin: 0;
   background-color: #E0DED7;
 }
-
-.banner{
-  background-image: url(../image/home/Background.png);
-  width: 1905px;
-  height: 950px;
+.banner {
+  background-image: url(../image/home/background1.png);
+  width: 100%;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-
 header {
-  background-color:  #E8F5E9 ; 
-  width: auto;
+  background-color: #E8F5E9;
+  width: 100%;
   height: 80px;
-  width: 1905px;
-  margin-bottom: 0;
   position: fixed;
   top: 0;
-  z-index:1000;
+  z-index: 1000;
+}
+
+footer{
+  font-family: urbanist, sans-serif;
 }
 
 .main-div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.nav-link ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  font-family: urbanist, sans-serif;
+  font-weight: 600;
+}
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .button-1 {
-  width: 100px;
-  height: 35px;
-  border-radius: 20px;
-}
-
-.back-ground {
-  width: 1905px;
-}
-
-.section {
-  width: 1905px;
-  background-color: #A98A7D; 
-  height: 1400px;
-}
-
-.line {
-  background-color: #E0DED7; 
-  width: 1905px;
-  height: 100px;
-  border-bottom: solid black 1px; 
-  border-top: solid black 1px;
-}
-
-#shop-icon {
-  margin-right: 10px;
-}
-
-.line-text {
-  text-align: center;
-  margin: 0;
-  font-size: 50px;
-  font-family: pacifico;
-  color: #3A445D; 
-}
-
-.tab-one, .tab-two, .tab-three {
-  background-color: #E0DED7;
-  width: 400px;
-  height: 500px;
-  border-radius: 20px;
-}
-
-.tab-div {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 100px;
-}
-
-.tab-img {
-  width: 400px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 300px;
-}
-
-.tab-slate {
-  width: 360px;
-  height: 189px;
-  background-color: #E0DED7; 
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding-left: 10px;
-  margin-left: 13px;
-}
-
-.milkshake-btn {
-  width: 200px;
-  height: 40px;
-  background-color: #A98A7D; 
-  border: 1px solid #869E81; 
-  box-shadow: unset 2px 2px 2px black;
-  border-radius: 10px;
-  color: white; 
-  font-weight: 750;
-  margin-left: 100px;
-}
-
-.tab-text {
-  text-align: center;
-  font-family: urbanist;
-}
-
-#line2 {
-  border-top: #869E81 solid 1px; 
-}
-
-#line1 {
-  border-top: #869E81 solid 1px; 
-}
-
-.about-section {
-  width: 1905px;
-  height: 800px;
-  background-color: #E0DED7; 
-}
-
-.cafe-img {
-  width: 600px;
-  height: 400px;
-  border-radius: 20px;
-}
-
-.about {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  margin-top: 100px;
-  margin-left: 250px;
-}
-
-#abouttext {
-  font-size: 25px;
-  font-family: miniver;
-  font-weight: 300;
-}
-
-.reservation-section{
-  width: 1905px;
-  height: 800px;
-  background-color: #E0DED7;      
-}
-
-.reservation-text{
-  font-size: 50px;
-  font-family: miniver ;
-  text-align: center;
-}
-
-#reservation1{
-  font-size: 20px;
-}
-
-.reservation-input{
-  width: 700px;
-  height: 60px;
-  padding-left: 20px;
-  font-family: urbanist;
-}
-
-.input-box{
-  display: flex;
-  justify-content: center;
-}
-
-#reservation-input-1,#reservation-input-2,#reservation-input-3,#reservation-input-4,#reservation-input-5,#reservation-input-6{
-  margin-top: 30px;
-}
-
-#reservation-input-2,#reservation-input-4,#reservation-input-6{
-  margin-left: 25px;
-}
-
-#reservation-input-1,#reservation-input-3,#reservation-input-5{
-  margin-right: 25px;
-}
-
-.team-section{
-  background-color: #E0DED7;
-  width: 1905px;
-  height: 800px;
-}
-
-.teamtab-1{
-  background-color: white;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-}
-
-.team-card{
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
-  gap: 30px;
-}
-
-.footer{
-  width: 1905px;
-  height: 350px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../image/home/footer.png);
-}
-
-.footer-div{
-  display: flex;
-  color: white;
-  gap: 100px;
-  font-family: urbanist;
-  padding-top: 80px;
-  margin-left: 500px;
-}
-
-.send-input{
-  width: 250px;
-  height: 26px;
-}
-
-.send-btn{
-  width: 100px;
-  height: 25px;
-  background-color: #869E81;
+  width: 4rem;
+  height: 2rem;
   border-radius: 10px;
 }
 
-.copy{
-  text-align: center;
-  font-family: urbanist;
-  width: 1905px;
-  height: 40px;
-  background-color: #E0DED7;
+.milkshake-btn{
+ margin-top: 0;
+ margin-bottom: 10px;
 }
 
-.reserve-btn{
-  width: 200px;
-  height: 40px;
-  margin-left: 850px;
-  margin-top: 30px;
-  background-color: #869E81;
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #E8F5E9;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .nav-link ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-link.active {
+    display: block;
+  }
 }
-
-.milkshake-btn:hover{
-  background-color: #869E81;
-  color: black;
-}
-
-.team-text{
-  font-family: urbanist;
-  text-align: center;
-}
-
-.team-text:hover{
-  color: #869E81;
-  scale: 120%;
-}
-
-.teamtab-1:hover{
-  border: #3A445D 1px solid;
-}
-
-h1.head-text{
-  margin-top: 0;
-}
-
-.head-div{
-  display:flex;
-  align-items: center;
-  height: 950px;
-  margin-left: 50px;
-  
-  
-}
-
+/* -------- */
 .head-text{
   font-size: 110px;
-  
 }
-
 .head-text-sub{
   font-size: 50px;
   font-family: urbanist;
 }
-
-.reserve-btn:hover{
-  background-color: #A98A7D;
-  color: white;
+.head-div-sub{
+  position: relative;
+  top: 100px;
+  
 }
-
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
 ul,a {
   list-style: none;
   text-decoration: none;
@@ -304,37 +105,245 @@ ul,a {
   font-family: urbanist;
   font-weight: 600;
 }
-
 ul{
   display: flex;
   gap: 20px;
 }
-
 li:hover{
   text-decoration: underline;
 }
-
-.brand-div{
-  padding-top: 10px;
+/* Section */
+.section {
+  width: 100%;
+  height: auto;
 }
-
-.head-div-sub{
-  animation: text 5s ;
+.line {
+  width: 100%;
+  height: auto;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  padding: 20px 0;
 }
-
-.tab-one:hover,.tab-two:hover,.tab-three:hover{
-  scale: 110%;
+.line-text {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: pacifico;
+  color: #3A445D;
+}
+.tab-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 50px;
+}
+.tab-one, .tab-two, .tab-three {
+  background-color: #d8cebc;
+  width: 300px;
+  height: auto;
   border-radius: 20px;
-  transition: 0.5s;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
 }
-
-.tab-img:hover{
-  transition: 0.5s;
+.tab-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cafe-img {
+  max-width: 1000px;
   border-radius: 20px;
 }
-
-.head-div-sub:hover{
-  scale: 110%;
-  color: rgb(46, 45, 44);
-  transition: 1s;
+.about-section {
+  margin-top: 80px;
+  width: 100%;
+  background-color: #E0DED7;
+  padding: 60px 10%;
+  box-sizing: border-box;
 }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.about-text {
+  flex: 1 1 400px;
+  font-size: 18px;
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.about-text p {
+  margin-bottom: 20px;
+}
+.cafe-img {
+  flex: 1 1 400px;
+  max-width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .about-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+  .cafe-img {
+    width: 90%;
+  }
+}
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.team-section {
+  width: 100%;
+  background-color: #E0DED7;
+  text-align: center;
+}
+.team-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.teamtab-1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.footer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/home/footer.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.footer-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+}
+.copy {
+  text-align: center;
+  font-family: urbanist;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #E0DED7;
+}
+.reserve-btn, .milkshake-btn, .send-btn {
+  width: 200px;
+  height: 40px;
+  background-color: #869E81;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.reservation-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+.reservation-text {
+  font-family: "Urbanist", sans-serif;
+  margin: 10px 0;
+  color: #333;
+}
+.input-box {
+  margin: 30px 0;
+}
+.reservation-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 1%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.reserve-btn {
+  padding: 14px 40px;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.reserve-btn:hover {
+  background: #444;
+}
+@media (max-width: 768px) {
+  .reservation-input {
+    width: 100%;
+    margin: 8px 0;
+  }
+  .reserve-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .head-text {
+    font-size: 70px;
+  }
+  .head-text-sub {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .main-div {
+    gap: 10px;
+  }
+  .head-text {
+    font-size: 50px;
+  }
+  .head-text-sub {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .tab-one, .tab-two, .tab-three {
+    width: 90%;
+  }
+  .teamtab-1 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* animation-section */
+
+.tab-one:hover, .tab-two:hover, .tab-three:hover{
+  transform: scale(1.10);
+}
+
+.team-text:hover{
+  color: #869E81;
+}
+
+.teamtab-1:hover{
+  transform: scale(1.10);
+  border: black 2px solid;
+}
+  
