@@ -332,6 +332,12 @@ li:hover{
   }
 }
 
+@media (maax-width:425px){
+  footer{
+    font-size: 10px;
+  }
+}
+
 /* animation-section */
 
 .tab-one:hover, .tab-two:hover, .tab-three:hover{

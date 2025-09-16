@@ -204,3 +204,9 @@ h1{
     display: block;
   } 
 }
+
+@media (maax-width:425px){
+  footer{
+    font-size: 10px;
+  }
+}
