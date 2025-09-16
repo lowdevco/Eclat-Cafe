@@ -150,12 +150,6 @@ h1{
   border-radius: 10px;
 }
 
-@media (max-width:425px){
-  .submit-btn{
-    width: 360px;
-  }
-}
-
 .submit-btn:hover{
   background-color: #869E81;
 }
