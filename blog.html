@@ -1,116 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-<link rel="stylesheet" href="Assets/css/blog.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="icon" href="Assets/image/home/Eclat Logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-</head>
-<body>
-<header>
-  <div class="banner-div">
-    <div class="main-div">
-      <div class="button-div">
-        <i class="fa-solid fa-basket-shopping" id="shop-icon"></i>
-        <button type="button" class="button-1">Order</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Eclat Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Pacifico&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Assets/css/blog.css" />
+    <link rel="icon" href="Assets/image/home/Eclat Logo.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <h1>Eclat Cafe</h1>
+        </a>
+        <input type="checkbox" id="menu-toggle-checkbox" hidden />
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="blog.html" class="active">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <div class="header-actions">
+            <i class="fa-solid fa-basket-shopping cart-icon"></i>
+            <button class="btn btn-primary">Order</button>
+          </div>
+        </nav>
       </div>
-      <div class="brand-div">
-        <h1 style="color: rgb(0, 0, 0)">Eclat Cafe</h1>
-      </div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <!-- Navigation -->
-      <div class="nav-link" id="nav-link">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-<section class="section" id="one">
-       <div class="welcome-text">
-        <h1 class="head">Welcome to the eclat cafe blog</h1>
-        <p>Welcome to our little slice of paradise! The Eclat Cafe blog is where we share the passion behind our milkshakes, <br> the secrets of our pastries, and everything that makes our cafe special. <br>Whether you're a regular or just stopping by, we hope you'll feel right at home.</p>
-    </div>
-</section>
-<br>
-<br>
-<br>
-<section class="section" id="two">
-    <div>
-        <h1 class="head">The Eclat Cafe Story</h1>
-        <p>We opened Eclat Cafe with one simple goal: to serve quality at an affordable rate. The name <br> "Eclat" means brilliant, and that’s what we aim for with every single drink. Our signature <br>Strawberry Milkshake is a perfect example—made with a secret recipe and the freshest fruit.</p>
-        <p>When you walk through our doors, we want you to feel comfort and aesthetic. Our simple yet <br> elegant decor is designed to be a peaceful escape from the everyday, a place where you can <br> relax with a good book or connect with friends.</p>
-    </div>
-    <div>
-        <img src="Assets/image/blog/Story.png" alt="story" class="story-img">
-    </div>
-</section>
-<section class="section" id="three">
-    <div>
-        <h1 class="head">Behind Our Delicious Delights</h1>
-        <p>Have you ever wondered what makes our food so good? The secret is simple: it's the love our <br>
-        team puts into every creation. Our pastries are all baked in-house by our skilled and authentic <br>
-        chefs, who pour their hearts into every single item. From our flaky croissants to our delectable <br>
-        cakes, each bite is a testament to their passion.
-        </p>
-    </div>
-    <div>
-        <img src="Assets/image/blog/Team.png" alt="team" class="team-img">
-    </div>
-</section>
-<section class="section" id="four">
-    <h1 class="head">More Than Just a Cafe</h1>
-    <p>Eclat Cafe is more than just a place to get a milkshake; it's a community. We love seeing our space <br>
-     filled with laughter during parties and events, and we're so proud of the community that has <br>
-      grown around us. We even host open mic nights and book clubs to bring people together.
-    </p>
-    <h2 class="head" id="thank">Thank you for being a part of our story. We hope to see you soon!</h2>
-</section>
-<footer class="footer">
-<div class="footer-div">
- <div>
-    <h3>CONTACT US</h3>
-    <p>Mail: <span>eclatcafe@email.com</span></p>
-    <p>Phone: <span>+91 7806349820</span></p>
-    <p>Address: <span>Church st, Near MG Rd <br></span></p>
- </div>
- <div>
-    <h3>OPEN HOURS</h3>
-    <h4>Eclat cafe schedules</h4>
-    <p>Monday-Friday..............9AM to 10PM</p>
-    <p>Saturday.........................12AM to 9PM</p>
-    <p>Sunday...........................Close</p>
- </div>
- <div>
-    <h3>NEWS LETTER</h3>
-    <input type="text" class="send-input" placeholder="REVIEW">
-    <br>
-    <br>
-    <button type="submit" class="send-btn">SEND</button>
- </div>
-</div>
-</footer>
-<section class="copy">
-    <h4>Copyright © 2025 Eclat Cafe All Rights Reserved</h4>
-</section>
-</body>
+    <section class="blog-hero">
+      <div class="hero-content">
+        <h1 class="blog-title">Welcome to the Eclat Cafe Blog</h1>
+        <p class="blog-subtitle">Welcome to our little slice of paradise! The Eclat Cafe blog is where we share the passion behind our milkshakes, the secrets of our pastries, and everything that makes our cafe special. Whether you're a regular or just stopping by, we hope you'll feel right at home.</p>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="article-grid">
+        <div class="article-text">
+          <h2 class="article-head">The Eclat Cafe Story</h2>
+          <p>We opened Eclat Cafe with one simple goal: to serve quality at an affordable rate. The name "Eclat" means brilliant, and that’s what we aim for with every single drink. Our signature Strawberry Milkshake is a perfect example—made with a secret recipe and the freshest fruit.</p>
+          <p>When you walk through our doors, we want you to feel comfort and aesthetic. Our simple yet elegant decor is designed to be a peaceful escape from the everyday, a place where you can relax with a good book or connect with friends.</p>
+        </div>
+        <div class="article-image">
+          <img src="Assets/image/blog/Story.png" alt="The Eclat Cafe Story" />
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section bg-alt">
+      <div class="article-grid reverse">
+        <div class="article-text">
+          <h2 class="article-head">Behind Our Delicious Delights</h2>
+          <p>Have you ever wondered what makes our food so good? The secret is simple: it's the love our team puts into every creation. Our pastries are all baked in-house by our skilled and authentic chefs, who pour their hearts into every single item.</p>
+          <p>From our flaky croissants to our delectable cakes, each bite is a testament to their passion.</p>
+        </div>
+        <div class="article-image">
+          <img src="Assets/image/blog/Team.png" alt="Our Team at Work" />
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section conclusion-section">
+      <div class="conclusion-content">
+        <h2 class="article-head">More Than Just a Cafe</h2>
+        <p>Eclat Cafe is more than just a place to get a milkshake; it's a community. We love seeing our space filled with laughter during parties and events, and we're so proud of the community that has grown around us. We even host open mic nights and book clubs to bring people together.</p>
+        <h3 class="thank-you-text">Thank you for being a part of our story. We hope to see you soon!</h3>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> eclatcafe@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7806349820</p>
+            <p><i class="fa-solid fa-location-dot"></i> Church st, Near MG Rd</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Open Hours</h3>
+          <div class="hours-info">
+            <p><span>Mon - Fri</span> <span>9 AM - 10 PM</span></p>
+            <p><span>Saturday</span> <span>12 PM - 9 PM</span></p>
+            <p><span>Sunday</span> <span>Closed</span></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p class="newsletter-text">Subscribe for updates and sweet offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit" class="btn btn-primary">SEND</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Eclat Cafe. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

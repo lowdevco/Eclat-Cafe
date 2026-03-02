@@ -1,253 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-<link rel="stylesheet" href="Assets/css/menu.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="icon" href="Assets/image/home/Eclat Logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-</head>
-<body>
-<header>
-  <div class="banner-div">
-    <div class="main-div">
-      <div class="button-div">
-        <i class="fa-solid fa-basket-shopping" id="shop-icon"></i>
-        <button type="button" class="button-1">Order</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Eclat Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Pacifico&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Assets/css/menu.css" />
+    <link rel="icon" href="Assets/image/home/Eclat Logo.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <h1>Eclat Cafe</h1>
+        </a>
+        <input type="checkbox" id="menu-toggle-checkbox" hidden />
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <div class="header-actions">
+            <i class="fa-solid fa-basket-shopping cart-icon"></i>
+            <button class="btn btn-primary">Order</button>
+          </div>
+        </nav>
       </div>
-      <div class="brand-div">
-        <h1 style="color: rgb(0, 0, 0)">Eclat Cafe</h1>
-      </div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <!-- Navigation -->
-      <div class="nav-link" id="nav-link">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-<div class="menu-head">
-    <h1 class="menu-text"> Eclat Menu</h1>
-</div>
+    <section class="menu-hero">
+      <div class="hero-content">
+        <h1 class="menu-title">Eclat Menu</h1>
+      </div>
+    </section>
 
-<section class="section" id="section-tag">
-        <div class="line" id="line1">
-           <h1 class="line-text">Milkshakes</h1>
+    <section class="menu-section">
+      <div class="section-title">
+        <h2>Milkshakes</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Assets/image/home/Banana.png" alt="Strawberry Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Strawberry Milkshake</h3>
+            <p>Creamy banana milkshake is a delightful blend of fresh bananas and cold milk.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-    <div class="tab-div">
-        <div class="tab-one">
-            <img src="Assets/image/home/Banana.png" alt="tab1" class="tab-img">
-               <div>
-                <h1 class="tab-text">Strawberry Mikshake</h1>
-                <p class="tab-text">Creamy banana milkshake is a delightful blend of fresh bananas and cold milk</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-               </div> 
+        <div class="product-card">
+          <img src="Assets/image/home/Chocolate.png" alt="Chocolate Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Chocolate Milkshake</h3>
+            <p>Creamy milk and chocolate ice cream blended together for a smooth, rich milkshake topped with cream.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-two">
-            <img src="Assets/image/home/Chocolate.png" alt="tab2" class="tab-img">
-            <div>
-                <h1 class="tab-text">Chocolate Mikshake</h1>
-                <p class="tab-text">Creamy milk and chocolate ice cream blended together for a smooth, rich milkshake topped with cream.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/home/Vanilla.png" alt="Vanilla Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Vanilla Milkshake</h3>
+            <p>Classic vanilla ice cream blended with fresh milk, with whipped cream for a smooth and creamy treat.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-three">
-            <img src="Assets/image/home/Vanilla.png" alt="tab3" class="tab-img">
-            <div>
-                <h1 class="tab-text">Vanilla Mikshake</h1>
-                <p class="tab-text">Classic vanilla ice cream blended with fresh milk, with whipped cream for a smooth and creamy treat.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/home/Mango.png" alt="Mango Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Mango Milkshake</h3>
+            <p>Ripe mangoes blended with milk and ice cream, topped with whipped cream for a tropical treat.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-    </div>
-        <div class="tab-div">
-        <div class="tab-one">
-            <img src="Assets/image/home/Mango.png" alt="tab1" class="tab-img">
-            <div>
-                <h1 class="tab-text">Mango Mikshake</h1>
-                <p class="tab-text">Ripe mangoes blended with milk and ice cream, topped with whipped cream for a tropical treat.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/home/Pistachio.png" alt="Pistachio Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Pistachio Milkshake</h3>
+            <p>Pistachio ice cream and milk blended, topped with whipped cream and crushed pistachios.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-two">
-            <img src="Assets/image/home/Pistachio.png" alt="tab2" class="tab-img">
-            <div>
-                <h1 class="tab-text">Pistachio Mikshake</h1>
-                <p class="tab-text">Pistachio ice cream and milk blended, topped with whipped cream and crushed pistachios.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/home/Oreo.png" alt="Oreo Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Oreo Milkshake</h3>
+            <p>Oreo cookies blended with milk and ice cream, topped with whipped cream and cookie crumbles.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-three">
-            <img src="Assets/image/home/Oreo.png" alt="tab3" class="tab-img">
-            <div>
-                <h1 class="tab-text">Oreo Mikshake</h1>
-                <p class="tab-text">Oreo cookies blended with milk and ice cream, topped with whipped cream and cookie crumbles.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Coffe.png" alt="Coffee Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Coffee Milkshake</h3>
+            <p>A rich blend of coffee and cream with the hint of espresso.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-    </div>
-    <div class="tab-div">
-        <div class="tab-one">
-            <img src="Assets/image/menu/Coffe.png" alt="tab1" class="tab-img">
-            <div>
-                <h1 class="tab-text">Coffe Mikshake</h1>
-                <p class="tab-text">A rich blend of coffee and cream with the hint of espresso</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Pumpkin Pie.png" alt="Pumpkin Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Pumpkin Milkshake</h3>
+            <p>A cozy taste of autumn in a glass with pumpkin pie surprise.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-two">
-            <img src="Assets/image/menu/Pumpkin Pie.png" alt="tab2" class="tab-img">
-            <div>
-                <h1 class="tab-text">Pumkin Mikshake</h1>
-                <p class="tab-text">A cozy taste of autumn in a glass with pumkin pie surprise.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
-        </div>
-        <div class="tab-three">
-            <img src="Assets/image/menu/Lime Pie.png" alt="tab3" class="tab-img">
-            <div>
-                <h1 class="tab-text">Lime Pie Mikshake</h1>
-                <p class="tab-text">A tropical fusion of tart key lime and sweet vanilla with a crunch adding sweet and sour deleight.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-</section>
+      </div>
+    </section>
 
-<section class="section" id="section-tag">
-        <div class="line" id="line1">
-           <h1 class="line-text">Pastries</h1>
+    <section class="menu-section bg-alt">
+      <div class="section-title">
+        <h2>Pastries</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Assets/image/menu/Croissant.png" alt="Croissant" class="product-img" />
+          <div class="product-info">
+            <h3>Croissant</h3>
+            <p>A buttery, flaky French pastry with a golden crust.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-    <div class="tab-div">
-        <div class="tab-one">
-            <img src="Assets/image/menu/Croissant.png" alt="tab1" class="tab-img">
-               <div>
-                <h1 class="tab-text">Croissant</h1>
-                <p class="tab-text">A buttery, flaky French pastry with a golden crust.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-               </div> 
+        <div class="product-card">
+          <img src="Assets/image/menu/Pain au Chocolat.png" alt="Pain au Chocolat" class="product-img" />
+          <div class="product-info">
+            <h3>Pain au Chocolat</h3>
+            <p>A croissant-like pastry filled with rich chocolate.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-two">
-            <img src="Assets/image/menu/Pain au Chocolat.png" alt="tab2" class="tab-img">
-            <div>
-                <h1 class="tab-text">Pain au Chocolat</h1>
-                <p class="tab-text">A croissant-like pastry filled with rich chocolate.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/dan pastry.png" alt="Danish Pastry" class="product-img" />
+          <div class="product-info">
+            <h3>Danish Pastry</h3>
+            <p>A soft, layered pastry often topped with fruit or custard.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-three">
-            <img src="Assets/image/menu/dan pastry.png" alt="tab3" class="tab-img">
-            <div>
-                <h1 class="tab-text">Danish Pastry</h1>
-                <p class="tab-text">A soft, layered pastry often topped with fruit or custard.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Eclair.png" alt="Éclair" class="product-img" />
+          <div class="product-info">
+            <h3>Éclair</h3>
+            <p>A light pastry filled with cream with chocolate glaze.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-    </div>
-        <div class="tab-div">
-        <div class="tab-one">
-            <img src="Assets/image/menu/Eclair.png" alt="tab1" class="tab-img">
-            <div>
-                <h1 class="tab-text"> Éclair</h1>
-                <p class="tab-text">A light pastry filled with cream with chocolate glaze.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Mille-Feuille.png" alt="Mille-Feuille" class="product-img" />
+          <div class="product-info">
+            <h3>Mille-Feuille</h3>
+            <p>Layers of puff pastry with cream or custard filling.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-two">
-            <img src="Assets/image/menu/Mille-Feuille.png" alt="tab2" class="tab-img">
-            <div>
-                <h1 class="tab-text">Mille-Feuille</h1>
-                <p class="tab-text">Layers of puff pastry with cream or custard filling.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Choux à la Crème.png" alt="Choux à la Crème" class="product-img" />
+          <div class="product-info">
+            <h3>Choux à la Crème</h3>
+            <p>A round pastry filled with sweet whipped cream.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-three">
-            <img src="Assets/image/menu/Choux à la Crème.png" alt="tab3" class="tab-img">
-            <div>
-                <h1 class="tab-text">Choux à la Crème</h1>
-                <p class="tab-text">A round pastry filled with sweet whipped cream.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Profiterole.png" alt="Profiterole" class="product-img" />
+          <div class="product-info">
+            <h3>Profiterole</h3>
+            <p>A small cream puff often served with chocolate sauce.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-    </div>
-    <div class="tab-div">
-        <div class="tab-one">
-            <img src="Assets/image/menu/Profiterole.png" alt="tab1" class="tab-img">
-            <div>
-                <h1 class="tab-text"> Profiterole</h1>
-                <p class="tab-text"> A small cream puff often served with chocolate sauce.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="product-card">
+          <img src="Assets/image/menu/Apple Turnover.png" alt="Apple Turnover" class="product-img" />
+          <div class="product-info">
+            <h3>Apple Turnover</h3>
+            <p>Puff pastry filled with spiced apple filling.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
+          </div>
         </div>
-        <div class="tab-two">
-            <img src="Assets/image/menu/Apple Turnover.png" alt="tab2" class="tab-img">
-            <div>
-                <h1 class="tab-text"> Apple Turnover</h1>
-                <p class="tab-text">Puff pastry filled with spiced apple filling.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> eclatcafe@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7806349820</p>
+            <p><i class="fa-solid fa-location-dot"></i> Church st, Near MG Rd</p>
+          </div>
         </div>
-        <div class="tab-three">
-            <img src="Assets/image/menu/Cinnamon Roll.png" alt="tab3" class="tab-img">
-            <div>
-                <h1 class="tab-text">Cinnamon Roll </h1>
-                <p class="tab-text"> A soft roll swirled with cinnamon and sugar.</p>
-                <button type="button" class="milkshake-btn">ORDER NOW</button>
-            </div>
+        <div class="footer-col">
+          <h3>Open Hours</h3>
+          <div class="hours-info">
+            <p><span>Mon - Fri</span> <span>9 AM - 10 PM</span></p>
+            <p><span>Saturday</span> <span>12 PM - 9 PM</span></p>
+            <p><span>Sunday</span> <span>Closed</span></p>
+          </div>
         </div>
-    </div>    
-</section>
-<br>
-<br>
-<br>
-<footer class="footer">
-<div class="footer-div">
- <div>
-    <h3>CONTACT US</h3>
-    <p>Mail: <span>eclatcafe@email.com</span></p>
-    <p>Phone: <span>+91 7806349820</span></p>
-    <p>Address: <span>Church st, Near MG Rd <br></span></p>
- </div>
- <div>
-    <h3>OPEN HOURS</h3>
-    <h4>Eclat cafe schedules</h4>
-    <p>Monday-Friday..............9AM to 10PM</p>
-    <p>Saturday.........................12AM to 9PM</p>
-    <p>Sunday...........................Close</p>
- </div>
- <div>
-    <h3>NEWS LETTER</h3>
-    <input type="text" class="send-input" placeholder="REVIEW">
-    <br>
-    <br>
-    <button type="submit" class="send-btn">SEND</button>
- </div>
-</div>
-</footer>
-<section class="copy">
-    <h4>Copyright © 2025 Eclat Cafe All Rights Reserved</h4>
-</section>
-</body>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p class="newsletter-text">Subscribe for updates and sweet offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit" class="btn btn-primary">SEND</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Eclat Cafe. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

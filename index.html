@@ -3,287 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eclat</title>
-    <link rel="stylesheet" href="Assets/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>Eclat Cafe | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Assets/css/index.css" />
     <link rel="icon" href="Assets/image/home/Eclat Logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Miniver&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <h1>Eclat Cafe</h1>
+        </a>
+        <input type="checkbox" id="menu-toggle-checkbox" hidden />
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <div class="header-actions">
+            <i class="fa-solid fa-basket-shopping cart-icon"></i>
+            <button class="btn btn-primary">Order</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <section class="banner">
-      <header>
-  <div class="banner-div">
-    <div class="main-div">
-      <div class="button-div">
-        <i class="fa-solid fa-basket-shopping" id="shop-icon"></i>
-        <button type="button" class="button-1">Order</button>
-      </div>
-      <div class="brand-div">
-        <h1 style="color: rgb(0, 0, 0)">Eclat Cafe</h1>
-      </div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <!-- Navigation -->
-      <div class="nav-link" id="nav-link">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="head-div">
-        <div class="head-div-sub">
-          <h1 class="head-text">ECLAT CAFE</h1>
-          <h2 class="head-text-sub">Where Every Bite is a <br />Masterpiece</h2>
+      <div class="banner-content">
+        <h1 class="hero-title">ECLAT CAFE</h1>
+        <p class="hero-subtitle">Where Every Bite is a Masterpiece. Discover the finest milkshakes and handcrafted pastries in Bangalore.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary">Explore Menu</button>
+          <button class="btn btn-outline">Book a Table</button>
         </div>
       </div>
     </section>
-    <section class="section" id="section-tag" style="padding-top: 100px;">
-      <div class="line">
-        <h1 class="line-text">Eclat Milkshakes</h1>
+
+    <section class="section products-section" id="menu">
+      <div class="section-title">
+        <h2>Eclat Milkshakes</h2>
+        <div class="title-underline"></div>
       </div>
-      <div class="tab-div">
-        <div class="tab-one">
-          <img src="Assets/image/home/Banana.png" alt="tab1" class="tab-img" />
-          <div>
-            <h1 class="tab-text">Banana Mikshake</h1>
-            <p class="tab-text">
-              Creamy banana milkshake is a delightful blend of fresh bananas and cold milk
-            </p>
-            <button type="button" class="milkshake-btn">ORDER NOW</button>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Assets/image/home/Banana.png" alt="Banana Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Banana Milkshake</h3>
+            <p>Creamy banana milkshake is a delightful blend of fresh bananas and cold milk.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
           </div>
         </div>
-        <div class="tab-two">
-          <img src="Assets/image/home/Chocolate.png" alt="tab2" class="tab-img" />
-          <div>
-            <h1 class="tab-text">Chocolate Mikshake</h1>
-            <p class="tab-text">
-              Creamy milk and chocolate ice cream blended together for a smooth,
-              rich milkshake
-            </p>
-            <button type="button" class="milkshake-btn">ORDER NOW</button>
+        <div class="product-card">
+          <img src="Assets/image/home/Chocolate.png" alt="Chocolate Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Chocolate Milkshake</h3>
+            <p>Creamy milk and chocolate ice cream blended together for a smooth, rich milkshake.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
           </div>
         </div>
-        <div class="tab-three">
-          <img src="Assets/image/home/Vanilla.png" alt="tab3" class="tab-img" />
-          <div>
-            <h1 class="tab-text">Vanilla Mikshake</h1>
-            <p class="tab-text">
-              Classic vanilla ice cream blended with fresh milk, with whipped
-              cream
-            </p>
-            <button type="button" class="milkshake-btn">ORDER NOW</button>
+        <div class="product-card">
+          <img src="Assets/image/home/Vanilla.png" alt="Vanilla Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Vanilla Milkshake</h3>
+            <p>Classic vanilla ice cream blended with fresh milk, with whipped cream.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
           </div>
         </div>
-      </div>
-      <div class="tab-div">
-        <div class="tab-one">
-          <img src="Assets/image/home/Mango.png" alt="tab1" class="tab-img" />
-          <div>
-            <h1 class="tab-text">Mango Mikshake</h1>
-            <p class="tab-text">
-              Ripe mangoes blended with milk and ice cream, topped with whipped
-              cream
-            </p>
-            <button type="button" class="milkshake-btn">ORDER NOW</button>
+        <div class="product-card">
+          <img src="Assets/image/home/Mango.png" alt="Mango Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Mango Milkshake</h3>
+            <p>Ripe mangoes blended with milk and ice cream, topped with whipped cream.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
           </div>
         </div>
-        <div class="tab-two">
-          <img src="Assets/image/home/Pistachio.png" alt="tab2" class="tab-img" />
-          <div>
-            <h1 class="tab-text">Pistachio Mikshake</h1>
-            <p class="tab-text">
-              Pistachio ice cream and milk blended, topped with whipped cream
-              and crushed pistachios.
-            </p>
-            <button type="button" class="milkshake-btn">ORDER NOW</button>
+        <div class="product-card">
+          <img src="Assets/image/home/Pistachio.png" alt="Pistachio Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Pistachio Milkshake</h3>
+            <p>Pistachio ice cream and milk blended, topped with whipped cream and crushed pistachios.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
           </div>
         </div>
-        <div class="tab-three">
-          <img src="Assets/image/home/Oreo.png" alt="tab3" class="tab-img" />
-          <div>
-            <h1 class="tab-text">Oreo Mikshake</h1>
-            <p class="tab-text">
-              Oreo cookies blended with milk and ice cream, topped with whipped
-              cream
-            </p>
-            <button type="button" class="milkshake-btn">ORDER NOW</button>
+        <div class="product-card">
+          <img src="Assets/image/home/Oreo.png" alt="Oreo Milkshake" class="product-img" />
+          <div class="product-info">
+            <h3>Oreo Milkshake</h3>
+            <p>Oreo cookies blended with milk and ice cream, topped with whipped cream.</p>
+            <button class="btn btn-secondary">ORDER NOW</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-section">
-      <div class="line">
-        <h1 class="line-text">About Us</h1>
+
+    <section class="section about-section">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <div class="title-underline"></div>
       </div>
-      <div class="about">
-        <div class="about-text">
-          <p>
-            Welcome to Eclat Cafe, your sweet escape in the heart of Bangalore.
-            Our passion is crafting the perfect milkshake, and we've turned it
-            into an art. We believe that every sip should be a moment of pure
-            joy. That's why we use only the finest ingredients to create our
-            wide range of milkshakes, from timeless classics to unique, new
-            flavors. Beyond our delicious drinks, Eclat Cafe is a place to relax
-            and connect. We've created a cozy space where you can unwind, chat
-            with friends, and make new memories. Come visit us and find your
-            favorite treat. We can't wait to share our passion with you.
-          </p>
-          <!-- <h1 id="abouttext">Welcome to Eclat Cafe, your sweet escape in the heart of Bangalore.  Our passion is crafting the perfect milkshake, and we've turned it into an art.</h1>
-                <h1 id="abouttext">We believe that every sip should be a moment of pure joy. That's why we use  only the finest ingredients to create our wide range of milkshakes, from timeless <br> classics to unique, new flavors.</h1>
-                <h1 id="abouttext">Beyond our delicious drinks, Eclat Cafe is a place to relax and connect. <br> We've created a cozy space where you can unwind, chat with friends, <br> and make new memories.</h1>
-                <h1 id="abouttext">Come visit us and find your favorite treat. <br> We can't wait to share our passion with you.</h1> -->
+      <div class="about-container">
+        <div class="about-content">
+          <p>Welcome to Eclat Cafe, your sweet escape in the heart of Bangalore. Our passion is crafting the perfect milkshake, and we've turned it into an art. We believe that every sip should be a moment of pure joy.</p>
+          <p>That's why we use only the finest ingredients to create our wide range of milkshakes, from timeless classics to unique, new flavors. Beyond our delicious drinks, Eclat Cafe is a place to relax and connect.</p>
+          <p>Come visit us and find your favorite treat. We can't wait to share our passion with you.</p>
         </div>
-        <div>
-          <img src="Assets/image/home/Cafe.png" alt="cafe" class="cafe-img" />
+        <div class="about-image-wrapper">
+          <img src="Assets/image/home/Cafe.png" alt="Inside Eclat Cafe" class="cafe-img" />
         </div>
       </div>
     </section>
-    <section class="reservation-section">
-      <div class="line" id="line2">
-        <h1 class="line-text">Reservation</h1>
+
+    <section class="section reservation-section">
+      <div class="section-title">
+        <h2>Reservation</h2>
+        <div class="title-underline"></div>
       </div>
-      <div>
-        <h1 class="reservation-text">Book Your Table</h1>
-        <p class="reservation-text" id="reservation1">
-          Planning a get-together? Let Eclat Cafe handle the details. Reserve a
-          table for your party and enjoy our cozy atmosphere and delicious menu,
-          tailored for your special occasion.
-        </p>
-        <form class="input-box">
-          <div>
-            <input
-              type="text"
-              placeholder="Name"
-              class="reservation-input"
-              id="reservation-input-1"
-            />
-            <input
-              type="text"
-              placeholder="Phone"
-              class="reservation-input"
-              id="reservation-input-2"
-            />
-            <br />
-            <input
-              type="email"
-              placeholder="Email"
-              class="reservation-input"
-              id="reservation-input-3"
-            />
-            <input
-              type="number"
-              placeholder="Number of people"
-              class="reservation-input"
-              id="reservation-input-4"
-            />
-            <br />
-            <input
-              type="date"
-              class="reservation-input"
-              id="reservation-input-5"
-            />
-            <input
-              type="time"
-              class="reservation-input"
-              id="reservation-input-6"
-            />
-          </div>
+      <div class="reservation-container">
+        <div class="reservation-text">
+          <h3>Book Your Table</h3>
+          <p>Planning a get-together? Let Eclat Cafe handle the details. Reserve a table for your party and enjoy our cozy atmosphere and delicious menu, tailored for your special occasion.</p>
+        </div>
+        <form class="reservation-form">
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Phone" required />
+          <input type="email" placeholder="Email" required />
+          <input type="number" placeholder="Number of people" min="1" required />
+          <input type="date" required />
+          <input type="time" required />
+          <button type="submit" class="btn btn-primary form-submit">RESERVE TABLE</button>
         </form>
-        <button type="submit" class="reserve-btn">RESERVE</button>
-        <div style="margin-top: 70px">
-          <p class="reservation-text" id="reservation1">
-            Our team is dedicated to providing the perfect setting. Simply tell
-            us about your event, and we'll take care of the rest. With our
-            delicious pastries,<br />
-            fresh coffee, and savory meals, your guests will leave with a
-            lasting impression. Reserve your spot today to skip the wait and
-            make your event truly memorable.
-          </p>
+        <p class="reservation-footer-text">Our team is dedicated to providing the perfect setting. Simply tell us about your event, and we'll take care of the rest. Reserve your spot today to skip the wait and make your event truly memorable.</p>
+      </div>
+    </section>
+
+    <section class="section team-section">
+      <div class="section-title">
+        <h2>Our Team</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="Assets/image/home/team/1.png" alt="Anjali" />
+          <h3>Anjali</h3>
+          <p>Head Barista</p>
+        </div>
+        <div class="team-member">
+          <img src="Assets/image/home/team/2.png" alt="Rohan" />
+          <h3>Rohan</h3>
+          <p>Pastry Chef</p>
+        </div>
+        <div class="team-member">
+          <img src="Assets/image/home/team/3.png" alt="Sara" />
+          <h3>Sara</h3>
+          <p>Founder</p>
+        </div>
+        <div class="team-member">
+          <img src="Assets/image/home/team/4.png" alt="Mr Gupta" />
+          <h3>Mr Gupta</h3>
+          <p>Manager</p>
         </div>
       </div>
     </section>
-    <section class="team-section">
-      <div class="line">
-        <h1 class="line-text">Our Team</h1>
-      </div>
-      <div class="team-card">
-        <div>
-          <img src="Assets/image/home/team/1.png" alt="team1" class="teamtab-1" />
-          <h1 class="team-text">Anjali</h1>
-          <h1 class="team-text">Head Barista</h1>
-        </div>
-        <div>
-          <img src="Assets/image/home/team/2.png" alt="team1" class="teamtab-1" />
-          <h1 class="team-text">Rohan</h1>
-          <h1 class="team-text">Pastery Chef</h1>
-        </div>
-        <div>
-          <img src="Assets/image/home/team/3.png" alt="team1" class="teamtab-1" />
-          <h1 class="team-text">Sara</h1>
-          <h1 class="team-text">Founder</h1>
-        </div>
-        <div>
-          <img src="Assets/image/home/team/4.png" alt="team4" class="teamtab-1" />
-          <h1 class="team-text">Mr Gupta</h1>
-          <h1 class="team-text">Manager</h1>
-        </div>
-      </div>
-    </section>
+
     <footer class="footer">
-      <div class="footer-div">
-        <div>
-          <h3>CONTACT US</h3>
-          <p>Mail: <span>eclatcafe@email.com</span></p>
-          <p>Phone: <span>+91 7806349820</span></p>
-          <p>
-            Address: <span>Church st, Near MG Rd <br /></span>
-          </p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> eclatcafe@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7806349820</p>
+            <p><i class="fa-solid fa-location-dot"></i> Church st, Near MG Rd</p>
+          </div>
         </div>
-        <div>
-          <h3>OPEN HOURS</h3>
-          <h4>Eclat cafe schedules</h4>
-          <p>Monday-Friday..............9AM to 10PM</p>
-          <p>Saturday.........................12AM to 9PM</p>
-          <p>Sunday...........................Close</p>
+        <div class="footer-col">
+          <h3>Open Hours</h3>
+          <div class="hours-info">
+            <p><span>Mon - Fri</span> <span>9 AM - 10 PM</span></p>
+            <p><span>Saturday</span> <span>12 PM - 9 PM</span></p>
+            <p><span>Sunday</span> <span>Closed</span></p>
+          </div>
         </div>
-        <div>
-          <h3>NEWS LETTER</h3>
-          <input type="text" class="send-input" placeholder="REVIEW" />
-          <br />
-          <br />
-          <button type="submit" class="send-btn">SEND</button>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p class="newsletter-text">Subscribe for updates and sweet offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit" class="btn btn-primary">SEND</button>
+          </form>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Eclat Cafe. All Rights Reserved.</p>
       </div>
     </footer>
-    <section class="copy">
-      <h4>Copyright © 2025 Eclat Cafe All Rights Reserved</h4>
-    </section>
   </body>
 </html>

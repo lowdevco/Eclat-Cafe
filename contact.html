@@ -1,104 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
-<link rel="stylesheet" href="Assets/css/contact.css">    
-<link rel="icon" href="Assets/image/home/Eclat Logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Eclat Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Pacifico&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Assets/css/contact.css" />
+    <link rel="icon" href="Assets/image/home/Eclat Logo.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <h1>Eclat Cafe</h1>
+        </a>
+        <input type="checkbox" id="menu-toggle-checkbox" hidden />
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+          </ul>
+          <div class="header-actions">
+            <i class="fa-solid fa-basket-shopping cart-icon"></i>
+            <button class="btn btn-primary">Order</button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-</head>
-<body>    
-<section class="banner">
-<header>
-  <div class="banner-div">
-    <div class="main-div">
-      <div class="button-div">
-        <i class="fa-solid fa-basket-shopping" id="shop-icon"></i>
-        <button type="button" class="button-1">Order</button>
+    <section class="contact-hero">
+      <div class="hero-content">
+        <h1 class="contact-title">Contact Us</h1>
       </div>
-      <div class="brand-div">
-        <h1 style="color: rgb(0, 0, 0)">Eclat Cafe</h1>
+    </section>
+
+    <section class="review-section">
+      <div class="review-container">
+        <div class="review-header">
+          <h2>Leave Your Review</h2>
+          <p>Share your thoughts with us. Your feedback inspires and helps us grow.</p>
+          <div class="title-underline"></div>
+        </div>
+        
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="text" class="form-input" placeholder="Your Name" required />
+          </div>
+          <div class="input-group">
+            <input type="email" class="form-input" placeholder="Your Email" required />
+          </div>
+          <div class="input-group">
+            <textarea class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">SUBMIT</button>
+        </form>
       </div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
+    </section>
+
+    <section class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.983636746979!2d77.60155797491857!3d12.972886014850906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167dd2231db1%3A0xc3910c85c2921588!2sChurch%20St%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" class="contact-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> eclatcafe@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7806349820</p>
+            <p><i class="fa-solid fa-location-dot"></i> Church st, Near MG Rd</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Open Hours</h3>
+          <div class="hours-info">
+            <p><span>Mon - Fri</span> <span>9 AM - 10 PM</span></p>
+            <p><span>Saturday</span> <span>12 PM - 9 PM</span></p>
+            <p><span>Sunday</span> <span>Closed</span></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p class="newsletter-text">Subscribe for updates and sweet offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit" class="btn btn-primary">SEND</button>
+          </form>
+        </div>
       </div>
-      <!-- Navigation -->
-      <div class="nav-link" id="nav-link">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Eclat Cafe. All Rights Reserved.</p>
       </div>
-    </div>
-  </div>
-</header> 
-<div class="contact-pg">
-<h1 class="contact-txt">Contact Us</h1>
-</div>  
-</section>
-<section class="review-section">
-<div class="review-div">
-    <div>
-<div class="review-text">
-    <h1>Leave your Review</h1>
-    <h3>Share your thoughts with us, your feedback inspires and helps us grow</h3>
-</div>
-<form class="input-box">
-    <input type="text" class="name" placeholder="Name" ><br>
-    <input type="email" class="mail" placeholder="Email" ><br>
-    <input type="text" class="msg" placeholder="message"><br>
-</form>
-<div class="submit-btn-div">
-    <button class="submit-btn">SUBMIT</button>
-</div>
-    </div>
-</div>
-</section>
-<section>
-    <div class="contact-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4642.265374834708!2d77.60515917574756!3d12.974368914816246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c4d722c73%3A0x32a49eb101436b6d!2sChurch%20St%2C%20Bengaluru%2C%20Karnataka!5e1!3m2!1sen!2sin!4v1756448443294!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-map"></iframe>
-</div>
-</section>
-<footer class="footer">
-<div class="footer-div">
- <div>
-    <h3>CONTACT US</h3>
-    <p>Mail: <span>eclatcafe@email.com</span></p>
-    <p>Phone: <span>+91 7806349820</span></p>
-    <p>Address: <span>Church st, Near MG Rd <br></span></p>
- </div>
- <div>
-    <h3>OPEN HOURS</h3>
-    <h4>Eclat cafe schedules</h4>
-    <p>Monday-Friday..............9AM to 10PM</p>
-    <p>Saturday.........................12AM to 9PM</p>
-    <p>Sunday...........................Close</p>
- </div>
- <div>
-    <h3>NEWS LETTER</h3>
-    <input type="text" class="send-input" placeholder="REVIEW">
-    <br>
-    <br>
-    <button type="submit" class="send-btn">SEND</button>
- </div>
-</div>
-</footer>
-<section class="copy">
-    <h4>Copyright © 2025 Eclat Cafe All Rights Reserved</h4>
-</section>    
-</body>
+    </footer>
+  </body>
 </html>
